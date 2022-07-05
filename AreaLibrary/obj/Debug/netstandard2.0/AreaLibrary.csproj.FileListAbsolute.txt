@@ -1,0 +1,9 @@
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\bin\Debug\netstandard2.0\AreaLibrary.deps.json
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\bin\Debug\netstandard2.0\AreaLibrary.dll
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\bin\Debug\netstandard2.0\AreaLibrary.pdb
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.csprojAssemblyReference.cache
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.AssemblyInfoInputs.cache
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.AssemblyInfo.cs
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.dll
+C:\Users\naism\source\repos\AreaLibrary\AreaLibrary\obj\Debug\netstandard2.0\AreaLibrary.pdb

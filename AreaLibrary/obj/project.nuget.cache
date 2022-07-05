@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qgeYHe2ZzLqpdPk4qvq/XxqiQolXVxaIC5WQ6dtPYaKza1bGirWZqTd7JlUuInuHkW4hu7m8IPkBrkAN2ueVjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\naism\\source\\repos\\AreaLibrary\\AreaLibrary\\AreaLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\naism\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\naism\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
