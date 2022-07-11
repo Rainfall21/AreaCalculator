@@ -25,23 +25,18 @@ namespace AreaLibrary
         private IFigure GetFigure(double[] validParameters)
         {
             var figureType = (FigureType)validParameters.Length;
-            IFigure figure = null;
             switch (figureType)
             {
                 case FigureType.Circle:
-                    figure = new Circle(validParameters[0]);
-                    break;
+                    return new Circle(validParameters[0]);
                 case FigureType.Parallelogram:
-                    figure = new Parallelogram(validParameters[0], validParameters[1]);
-                    break;
+                    return new Parallelogram(validParameters[0], validParameters[1]);
                 case FigureType.Triangle:
-                    figure = new Triangle(validParameters[0], validParameters[1], validParameters[2]);
-                    break;
+                    return new Triangle(validParameters[0], validParameters[1], validParameters[2]);
                 case FigureType.Trapezoid:
-                    figure = new Trapezoid(validParameters[0], validParameters[1], validParameters[2], validParameters[3]);
-                    break;
+                    return new Trapezoid(validParameters[0], validParameters[1], validParameters[2], validParameters[3]);
             }
-            return figure;
+            return null;
         }
     }
 }
