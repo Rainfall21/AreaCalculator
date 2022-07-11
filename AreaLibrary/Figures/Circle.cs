@@ -18,7 +18,7 @@ namespace AreaLibrary
         public double GetArea()
         {
             double area = Math.PI * Math.Pow(radius, 2);
-
+            Console.WriteLine("Area of this circle is " + area);
             return area;
         }
     }

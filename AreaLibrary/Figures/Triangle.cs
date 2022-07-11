@@ -6,9 +6,9 @@ namespace AreaLibrary
 {
     public class Triangle : IFigure
     {
-        public double sideA;
-        public double sideB;
-        public double sideC;
+        private readonly double sideA;
+        private readonly double sideB;
+        private readonly double sideC;
 
         public Triangle(double sideA, double sideB, double sideC)
         {
@@ -29,7 +29,11 @@ namespace AreaLibrary
             double p = ((sideA + sideB + sideC) / 2);
 
             double area = Math.Sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
-
+            
+            if(RightAngle() == true)
+                Console.WriteLine("Area of this RIGHT triangle is " + area);
+            else
+                Console.WriteLine("Area of this triangle is " + area);
             return area;
         }   
         public bool RightAngle()

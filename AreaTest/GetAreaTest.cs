@@ -46,40 +46,17 @@ namespace AreaLibraryTests
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void GetAreaRectangleWithSide10Height20_200returned()
-        {
-            double side = 10;
-            double height = 20;
-            double expected = 200;
-
-            Rectangle rectangle = new Rectangle(side, height);
-            double actual = rectangle.GetArea();
-
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void GetAreaRhombusWithSide10Height15_150returned()
-        {
-            double side = 12;
-            double height = 10;
-            double expected = 120;
-
-            Rhombus rhombus = new Rhombus(side, height);
-            double actual = rhombus.GetArea();
-
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void GetAreaTrapezoidWithSideA10SideB15Height15_250returned()
+        public void GetAreaTrapezoidWithSideA10SideB12SideC8SideD9_80returned()
         {
             double sideA = 10;
-            double sideB = 15;
-            double height = 20;
-            double expected = 250;
+            double sideB = 12;
+            double sideC = 8;
+            double sideD = 9;
+            double expected = 80;
 
-            Trapezoid trapezoid = new Trapezoid(sideA, sideB, height);
+            Trapezoid trapezoid = new Trapezoid(sideA, sideB, sideC,sideD);
 
-            double actual = trapezoid.GetArea();
+            double actual = Math.Round(trapezoid.GetArea(),0);
 
             Assert.AreEqual(expected, actual);
         }
