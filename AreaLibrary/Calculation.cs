@@ -5,7 +5,7 @@ namespace AreaLibrary
 {
     public class Calculation
     {
-        public double[] Start()
+        public void Start()
         {
             Console.WriteLine("Enter known parameters separated by commas");
             string[] parameters = Console.ReadLine().Split(',');
@@ -13,9 +13,16 @@ namespace AreaLibrary
             if (validParameters.Length == 0)
                 throw new ArgumentNullException("There are no parameters");
 
-            return validParameters;
+            Calculation calculation = new Calculation();
+
+            var calculate = calculation.Calculate(validParameters);
         }
+
         public double Calculate(double[] validParameters)
+        {
+            return GetFigure(validParameters).GetArea();
+        }
+        private IFigure GetFigure(double[] validParameters)
         {
             var figureType = (FigureType)validParameters.Length;
             IFigure figure = null;
@@ -34,7 +41,7 @@ namespace AreaLibrary
                     figure = new Trapezoid(validParameters[0], validParameters[1], validParameters[2], validParameters[3]);
                     break;
             }
-            return figure.GetArea();
+            return figure;
         }
     }
 }

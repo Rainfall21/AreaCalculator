@@ -10,7 +10,5 @@ namespace AreaLibrary.Figures
         Parallelogram = 2,
         Triangle = 3,
         Trapezoid = 4,
-        //Pentagon = 5,
-        //Hexagon = 6,
     }
 }
