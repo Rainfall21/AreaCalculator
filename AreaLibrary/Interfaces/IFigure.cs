@@ -8,5 +8,4 @@ namespace AreaLibrary
     {
         double GetArea();
     }
-
 }

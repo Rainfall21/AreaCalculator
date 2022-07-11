@@ -8,30 +8,39 @@ namespace AreaTest
     public class CalculateTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException), "There are no figures with its parameter equal to 0")]
-        public void CalculateTestWithCase0_ExceptionReturned()
-        {
-            double[] validParameters = new double[0];
-            Calculation calculation = new Calculation();
-            double actual = calculation.Calculate(validParameters);
-        }
-
-        [TestMethod]
-        public void CalculateTestWithCase1_154Returned()
+        public void CalculateTestWithCaseCircle_154Returned()
         {
             double[] validParameters = new double[1] { 7 };
-            double expected = 153.9;
+            double expected = 154;
             Calculation calculation = new Calculation();
-            double actual = Math.Round(calculation.Calculate(validParameters),1);
+            double actual = Math.Round(calculation.Calculate(validParameters));
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void CalculateTestWithCase2_150Returned()
+        public void CalculateTestWithCaseParallelogram_150Returned()
         {
             double[] validParameters = new double[2] { 10,15 };
             double expected = 150;
             Calculation calculation = new Calculation();
             double actual = Math.Round(calculation.Calculate(validParameters), 1);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void CalculateTestWithCaseTriangleWithSides10_15_20_73Returned()
+        {
+            double[] validParameters = new double[3] { 10, 15, 20 };
+            double expected = 73;
+            Calculation calculation = new Calculation();
+            double actual = Math.Round(calculation.Calculate(validParameters));
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void CalculateTestWithCaseTrapezoidWithSides8_9_10_12_80Returned()
+        {
+            double[] validParameters = new double[4] { 10,12,8,9 };
+            double expected = 80;
+            Calculation calculation = new Calculation();
+            double actual = Math.Round(calculation.Calculate(validParameters));
             Assert.AreEqual(expected, actual);
         }
     }
